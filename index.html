@@ -3,9 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bài tập Bootstrap</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+            <p>Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <form class="d-flex">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                  </form>
+            </div>
+            <div class="col-md-6">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </div>
+        <div class="row"">
+            <div class="heading">
+                <h1>Danh mục</h1>
+                <p>Xem thêm</p>
+            </div>   
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <img src="/Img/Salad.png" alt="">
+                    <div class="card-body">
+                        Salad
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="/Img/Fruit.png" alt="">
+                    <div class="card-body">
+                        Trái Cây
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="/Img/Vege.png" alt="">
+                    <div class="card-body">
+                        Rau Củ
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="/Img/Sources.png" alt="">
+                    <div class="card-body">
+                        Gia Vị
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row"">
+            <p>Ưu đãi</p>
+            <p>Xem thêm</p>
+        </div>
+        <div class="row"">
+            <p>Gợi ý sản phẩm</p>
+            <p>Xem thêm</p>
+        </div>
+        <nav class="navbar sticky-bottom bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Sticky bottom</a>
+            </div>
+        </nav> 
+    </div>
+       
 </body>
 </html>
