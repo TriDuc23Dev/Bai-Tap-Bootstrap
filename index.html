@@ -3,91 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài tập Bootstrap</title>
-    <link rel="stylesheet" href="/style.css">
-    <!-- Bootstrap 5 -->
+    <title>TriDuc23Dev's Profile</title>
+    <!-- Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <!-- Font -->
+    <!-- Font Quicksand -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Quicksand", sans-serif;
+            background-color: #f8f8f8;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="location">
-                <i class="fa-solid fa-location-dot"></i>
-            <p>Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
+    <div class="container px-3 mt-5 ">
+        <div class="d-flex flex-row justify-content-between mb-0">
+            <div class="d-flex flex-col-6 align-items-center">
+                <button style="background-color:  #f8f8f8; border: none;">
+                    <i class="fa-solid fa-location-dot me-1"></i>
+                </button>
+                <p class="fw-bold mt-3">Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
+            </div>
+            <div class="d-flex flex-col-6 align-items-center">
+                <button style="background-color:  #f8f8f8; border: none;">
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+            </div>  
+        </div>
+        <div class="d-flex flex-row justify-content-between mb-3">
+            <div class="d-flex flex-col-8 align-items-center w-100">
+                <div class="form-control form-control-lg shadow-sm rounded">
+                    <i class="fa-solid fa-magnifying-glass me-2"></i>
+                    <input type="text" placeholder="Tìm kiếm sản phẩm" style="border: none; padding-right: 1rem;">
+                </div>
+            </div>
+            <div class="d-flex flex-col-4 align-items-center ms-5">  
+                <button style="background-color:  #f8f8f8; border: none;">
+                    <i class="fa-solid fa-bell"></i>
+                </button>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <form class="d-flex">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
-                  </form>
+        <div class="d-flex flex-row justify-content-between mb-3">
+            <p class="text-lg-start fs-4 fw-bold mt-3">Danh mục</p>
+            <p class="text-sm-end fs-6 fw-normal mt-4 text-success">Xem thêm</p>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly gap-4 mb-3">
+            <div class="col-2">
+                <div class="card align-items-center">
+                    <img class="w-100 p-1" src="Img/Salad.png" alt="Salad">
+                </div>
+                <p class="text-center mt-2 fw-medium">Salad</p>
             </div>
-            <div class="col-md-6">
-                <i class="fa-solid fa-bell"></i>
+            <div class="col-2">
+                <div class="card align-items-center">
+                    <img class="w-100 p-1" src="Img/Fruit.png" alt="Salad">
+                </div>
+                <p class="text-center mt-2 fw-medium">Trái cây</p>
+            </div>
+            <div class="col-2">
+                <div class="card align-items-center">
+                    <img class="w-100 p-1" src="Img/Vege.png" alt="Salad">
+                </div>
+                <p class="text-center mt-2 fw-medium">Rau củ</p>
+            </div>
+            <div class="col-2">
+                <div class="card align-items-center">
+                    <img class="w-100 p-1" src="Img/Sources.png" alt="Salad">
+                </div>
+                <p class="text-center mt-2 fw-medium">Gia vị</p>
             </div>
         </div>
-        <div class="row"">
-            <div class="heading">
-                <h1>Danh mục</h1>
-                <p>Xem thêm</p>
-            </div>   
+        <div class="d-flex flex-row justify-content-between mb-3">
+            <p class="text-lg-start fs-4 fw-bold mt-3">Ưu đãi</p>
+            <p class="text-sm-end fs-6 fw-normal mt-4 text-success">Xem thêm</p>
         </div>
-        <div class="row">
-            <div class="col-3">
-                <div class="card">
-                    <img src="/Img/Salad.png" alt="">
-                    <div class="card-body">
-                        Salad
+        <div class="row d-flex w-100 ms-1 mb-3">
+            <div class="col-12 w-100 h-100 px-5 py-2" style="background-image: url('Img/Bg.png'); background-repeat: no-repeat;">
+                <p class="fs-1 fw-bold text-warning mt-1 mb-0">SALE 50%</p>
+                <p class="fs-6 fw-bold text-success">MIX RAU CỦ</p>
+                <p class="fs-6 fw-bold mb-3">Đảm bảo - An toàn - Dinh dưỡng</p>
+                <button class="btn btn-sm btn-success rounded text-start">Xem món</button>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-between mb-3">
+            <p class="text-lg-start fs-4 fw-bold mt-3">Gợi ý sản phẩm</p>
+            <p class="text-sm-end fs-6 fw-normal mt-4 text-success">Xem thêm</p>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly">
+            <div class="d-flex card shadow px-2 py-2">
+                <img class="mt-3" src="Img/Dishes.png" alt="">
+                <div class="d-flex">
+                    <div class="col-10">
+                        <p class="mt-3 mb-0 fw-bold fs-6">Salad Ức gà</p>
+                        <p class="mb-0 fw-bold fs-6 text-success">100.000 &#8363</p>
+                        <p class="mb-0" style="font-size: 0.625rem;">236,5 kalo</p>
+                    </div>
+                    <div class="d-flex align-items-end col-2">
+                        <button class="btn btn-success rounded-circle""><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="card">
-                    <img src="/Img/Fruit.png" alt="">
-                    <div class="card-body">
-                        Trái Cây
+            <div class="d-flex card shadow px-2 py-2">
+                <img class="mt-3" src="Img/Dishes.png" alt="">
+                <div class="d-flex">
+                    <div class="col-10">
+                        <p class="mt-3 mb-0 fw-bold fs-6">Salad Ức gà</p>
+                        <p class="mb-0 fw-bold fs-6 text-success">100.000 &#8363</p>
+                        <p class="mb-0" style="font-size: 0.625rem;">236,5 kalo</p>
+                    </div>
+                    <div class="d-flex align-items-end col-2">
+                        <button class="btn btn-success rounded-circle""><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="card">
-                    <img src="/Img/Vege.png" alt="">
-                    <div class="card-body">
-                        Rau Củ
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <img src="/Img/Sources.png" alt="">
-                    <div class="card-body">
-                        Gia Vị
-                    </div>
-                </div>
-            </div>
+            
         </div>
-        <div class="row"">
-            <p>Ưu đãi</p>
-            <p>Xem thêm</p>
-        </div>
-        <div class="row"">
-            <p>Gợi ý sản phẩm</p>
-            <p>Xem thêm</p>
-        </div>
-        <nav class="navbar sticky-bottom bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Sticky bottom</a>
-            </div>
-        </nav> 
     </div>
-       
 </body>
 </html>
